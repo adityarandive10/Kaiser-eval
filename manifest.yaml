@@ -1,0 +1,21 @@
+﻿version: "1.0"
+metadata:
+  name: "KAISER Investigator Evaluation"
+  id: "kaiser-investigator-eval"
+  description: "Measures whether an AI coding agent investigates bugs with evidence, handles uncertainty, proposes safe fixes, and reports verification honestly."
+  author: "adityarandive2007"
+  license: "MIT"
+  tags:
+    - coding
+    - debugging
+    - root-cause-analysis
+    - security
+dataset:
+  file_path: "./dataset.jsonl"
+  features:
+    input: "input"
+    expected_output: "expected_output"
+evaluation_type:
+  method: "llm_as_a_judge"
+  rubrics_directory: "./rubrics"
+
